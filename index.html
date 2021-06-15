@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Building Form</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<div class="container" style="padding-top: 20px;">
+<form action="" method="" enctype="">
+	<div class="row">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h1 class="text-center">REAL PROPERTY FIELD APPRAISAL & ASSESSMENT SHEET - BUILDING</h1>
+			</div>
+			<!-- form-1 -->
+			<div id="form-1" class="panel-body">
+						<div class="form-group col-md-3">
+						<label>ARP NO.</label>
+							<input type="text" class="form-control" id="arp" required>
+						</div>
+
+						<div class="form-group col-md-2">
+							<label>PIN</label>
+							<input type="text" class="form-control" required>
+						</div>
+
+						<div class="form-group col-md-1">
+							<label>PROV.</label>
+							<input type="text" class="form-control" required>
+						</div>
+
+						<div class="form-group col-md-2">
+							<label>MUN.</label>
+							<input type="text" class="form-control" required>
+						</div>
+
+						<div class="form-group col-md-1">
+							<label>BRGY.</label>
+							<input type="text" class="form-control" required>
+						</div>
+
+						<div class="form-group col-md-1">
+							<label>SEC.</label>
+							<input type="text" class="form-control" required>
+						</div>
+
+						<div class="form-group col-md-1">
+							<label>ASS LOT</label>
+							<input type="text" class="form-control" required>
+						</div>
+
+						<div class="form-group col-md-1">
+							<label>IMP.</label>
+							<input type="text" class="form-control" required>
+						</div>
+
+						<div class="form-group col-md-6">
+							<h2>BUILDING LOCATION</h2>
+							<label>No. of street</label>
+							<input type="text" class="form-control" required>
+
+							<label>Brgy./Dist.</label>
+							<input type="text" class="form-control" required>
+
+							<label>Ass. Blk. No.</label>
+							<input type="text" class="form-control" required>
+
+							<label>Province</label>
+							<input type="text" class="form-control" required>
+
+							<label>Picture of building</label>
+							<input type="file" class="form-control" required>
+
+						</div>
+
+						<div class="form-group col-md-6">
+							<h2>LAND REFERENCE</h2>
+							<label>Owner</label>
+							<input type="text" class="form-control" required>
+
+							<label>Survey No.</label>
+							<input type="text" class="form-control" required>
+
+							<label>TDN/ARP No.</label>
+							<input type="text" class="form-control" required>
+
+							<label>Area</label>
+							<input type="text" class="form-control" required>
+
+							<label>Area sketch</label>
+							<input type="file" class="form-control" required>
+						</div>     
+			</div>
+			<!-- form-2 -->
+			<div id="form-2" style="display: none">
+						<h2 class="text-center">STRUCTURAL CHARACTERISTICS</h2>
+						<div class="panel-body" style="border:1px solid #337ab7; margin: 2rem">
+							
+							<div class="form-group col-md-4">
+								<label>Foundation</label>
+								<select name="Foundation" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Reinforced Concrete">Reinforced Concrete</option>
+									<option value="Plain Cement">Plain Cement</option>
+									<option value="CHB">CHB</option>
+								</select>
+
+								<label>Columns</label>
+								<select name="Columns" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Reinforced Concrete">Reinforced Concrete</option>
+									<option value="Steel">Steel</option>
+									<option value="Plain Concrete">Plain Concrete</option>
+								</select>
+
+								<label>Beams</label>
+								<select name="Beams" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Concrete">Concrete</option>
+									<option value="Reinforced Concrete">Reinforced Concrete</option>
+									<option value="Steel">Steel</option>
+								</select>
+
+								<label>Truss Framing</label>
+								<select name="Truss-Framing" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Wood">Wood</option>
+									<option value="Steel">Steel</option>
+									<option value="Coco Lumber">Coco Lumber</option>
+									<option value="Reinforced Concrete">Reinforced Concrete</option>
+									<option value="Concrete">Concrete</option>
+								</select>
+
+								<label>Roof</label>
+								<select name="Roof" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="G.I Plain Sheet">G.I Plain Sheet</option>
+									<option value="G.I Color Roof">G.I Color Roof</option>
+									<option value="GA-24 Longspan Prepainted">GA-24 Longspan Prepainted</option>
+									<option value="Reinforced Concrete">Reinforced Concrete</option>
+								</select>
+
+								<label>Exterior Wall</label>
+								<input type="number" class="form-control" min="0">
+
+							</div>
+
+							<div class="form-group col-md-4">
+								<label>Flooring</label>
+								<select name="Flooring" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Tiles">Tiles</option>
+									<option value="Concrete">Concrete</option>
+									<option value="Marble">Marble</option>
+									<option value="Wood">Wood</option>
+								</select>
+
+								<label>Doors</label>
+								<select name="Doors" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Glass">Glass</option>
+									<option value="Panel Type">Panel Type</option>
+									<option value="Aluminum Frame Doors">Aluminum Frame Doors</option>
+									<option value="Wood">Wood</option>
+									<option value="Plywood">Plywood</option>
+								</select>
+
+								<label>Ceiling</label>
+								<select name="Ceiling" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Plywood">Plywood</option>
+									<option value="Reinforced Concrete">Reinforced Concrete</option>
+									<option value="Wood">Wood</option>
+									<option value="Flexi Board">Flexi Board</option>
+								</select>
+
+								<label>Windows</label>
+								<select name="Windows" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Wood/Grills">Wood/Grills</option>
+									<option value="Aluminum Framed Casement">Aluminum Framed Casement</option>
+									<option value="Jalousy">Jalousy</option>
+									<option value="Open">Open</option>
+									<option value="Wood">Wood</option>
+									<option value="Glass">Glass</option>
+								</select>
+
+								<label>Stairs</label>
+								<select name="Stairs" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="CHB">CHB</option>
+									<option value="Wood">Wood</option>
+									<option value="Reinforced Concrete">Reinforced Concrete</option>
+									<option value="Concrete">Concrete</option>
+								</select>
+
+								<label>Partition</label>
+								<select name="Partition" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Reinforced Concrete">Reinforced Concrete</option>
+									<option value="Concrete">Concrete</option>
+									<option value="Wood">Wood</option>
+									<option value="Plywood">Plywood</option>
+								</select>
+								
+							</div> 
+
+							<div class="form-group col-md-4">
+								<label>Wall Finish</label>
+								<select name="Wall-Finish" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Concrete">Concrete</option>
+									<option value="Painted">Painted</option>
+									<option value="CHB">CHB</option>
+									<option value="Wood">Wood</option>
+									<option value="Cement Plaster">Cement Plaster</option>
+									<option value="Reinforced Concrete">Reinforced Concrete</option>
+								</select>
+
+								<label>Electrical</label>
+								<select name="Electrical" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="PVC">PVC</option>
+									<option value="Closed">Closed</option>
+									<option value="Open Wiring">Open Wiring</option>
+									<option value="Hidden w/ Panel Board">Hidden w/ Panel Board</option>
+								</select>
+
+								<label>Toilet & Bath</label>
+								<select name="Toilet-Bath" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="Tiles">Tiles</option>
+									<option value="Water Sealed">Water Sealed</option>
+									<option value="Plastic Bowl">Plastic Bowl</option>
+									<option value="Plain Concrete">Plain Concrete</option>
+								</select>
+
+								<label>Plumbing/Sewer</label>
+								<select name="Plumbing/Sewer" class="form-control">
+									<option selected value="">Choose Type</option>
+									<option value="PVC">PVC</option>
+									<option value="Water Sealed">Water Sealed</option>
+									<option value="G.I Plain Sheet">G.I Plain Sheet</option>
+									<option value="Tiles">Tiles</option>
+									<option value="Wood">Wood</option>
+								</select>
+
+								<label>Fixtures</label>
+								<input type="text" class="form-control">
+						</div>    
+						</div>
+						<div class="panel-body" style="border:1px solid #337ab7; margin: 2rem">
+							<div class="form-group col-md-6">
+								<label>Structural type</label>
+								<select name="buildingType" class="form-control">
+									<option selected value="">Choose Type </option>
+									<option value="I-A">I-A</option>
+									<option value="II-A">II-A</option>
+									<option value="II-B">II-B</option>
+									<option value="III-A">III-A</option>
+									<option value="III-B">III-B</option>
+									<option value="III-C">III-C</option>
+									<option value="III-D">III-D</option>
+									<option value="III-E">III-E</option>
+									<option value="III-E">III-F</option>
+									<option value="IV-A">IV-A</option>
+									<option value="IV-B">IV-B</option>
+									<option value="V-A">V-A</option>
+									<option value="V-B">V-B</option>
+									<option value="V-C">V-C</option>
+								</select>
+
+								<label>Bldg. Classification</label>
+								<select name="buildingClassi" class="form-control">
+									<option selected value="">Choose Type </option>
+									<option value="A">A. One-Family Dwelling</option>
+									<option value="B">B. Two Family Dwelling/Multiple Dwelling</option>
+									<option value="C">C. Access-Row House/Apartment House</option>
+									<option value="D">D. Hotel Office/School/Building</option>
+									<option value="E">E. Movie Theater</option>
+									<option value="F">F. Bodega/Warehouse/Factory/Building</option>
+									<option value="G">G. Gas Service Station</option>
+									<option value="H">H. Sawmill & Lumber Shed</option>
+								</select>
+
+								<label>Bldg. Permit</label>
+								<input type="text" class="form-control">
+
+								<label>No. of Storeys</label>
+								<input id="numOfStoreys" type="number" class="form-control" min="1" max="4">
+								<button type="button" id="generate" class="btn btn-primary btn-block" style="margin-top: 1rem;">Generate Floors</button>
+								<div id="storeys" style="border-bottom:1px solid black;padding: 2rem;margin-bottom: 2rem;">
+									<!-- calculations per floors -->
+								</div>
+
+
+
+								<label>Total Bldg. Area (sqm)</label>
+								<input id="totalFloorSQM" type="text" class="form-control" style="margin-bottom: 2rem;">
+								<button type="button" id="totalSQM" class="btn btn-success btn-block mt-3">Auto Calculate</button>
+
+								<!-- <label>Area of Ground Floor (sqm)</label>
+								<input type="text" class="form-control"> -->
+
+							</div>  
+							<div class="form-group col-md-6">
+								<label>Date Constructed</label>
+								<input type="Date" class="form-control" >
+
+								<label>Date Occupied</label>
+								<input type="Date" class="form-control" >
+
+								<label>Date Completed</label>
+								<input id="date" type="Date" class="form-control" >
+
+								<label>Bldg. Age</label>
+								<input id="buildingAge" type="number" class="form-control" min="0" value="" readonly>
+
+								
+							</div>   
+						</div>
+						<!--------------------- Value Computation -------------->
+						<h2 class="text-center">VALUE COMPUTATION</h2>
+						<div class="panel-body">
+							<div class="form-group col-md-6">
+								<div id="building-container" class="wrappers">
+									<h5 class="text-center">Building Core</h5>
+									<div>
+										<label>Area (sqm)</label>
+										<input id="total-area" type="number" class="form-control" placeholder="Area">
+										<label>Base Value (PHP)</label>
+										<input id="base-value" type="number" class="form-control" placeholder="Base Value" value="">
+										<button type="button" id="calculate-core" class="btn btn-success btn-block" style="margin: 2rem 0">Calculate</button>
+										<label>Market Value (PHP)</label>
+										<input name="market-value" type="text" class="form-control" placeholder="Market Value" readonly>
+										<!-- <label>Sub-Total</label>
+										<input type="text" class="form-control" placeholder="Sub-Total"> -->
+									</div>
+								</div>
+								<div id="depreciation-container" class="wrappers">
+									<h5 class="text-center">Depreciation Rate</h5>
+									<div>
+										<label>Market Value (PHP)</label>
+										<input name="market-value" type="text" class="form-control" placeholder="Market Value" readonly>
+										<label>Accumulated Depreciation</label>
+										<input id="rate" name="rate" type="text" class="form-control" placeholder="Depreciation Rate">
+										<button type="button" id="total-depreciation" class="btn btn-success btn-block" style="margin: 2rem 0">Calculate</button>
+										<input id="sub-total" type="number" class="form-control" placeholder="Sub-Total" value=''>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group col-md-6">
+								<div id="additional-container" class="wrappers">
+									<button type="button" id="add-items" class="btn btn-success" style="margin-bottom: 2rem;">+</button>
+									<label>Additional Items</label>
+									<select class="form-control">
+										<option value="carport">Carport-35%</option>
+										<option value="porch">Porch-35%</option>
+										<option value="balcony">Balcony-45%</option>
+										<option value="garage-terrace">Garage Terrace-45%</option>
+										<option value="covered">Covered-37%</option>
+										<option value="roof-deck-dovered">Roof Deck Covered-60%</option>
+										<option value="open">Open-30%</option>
+									</select>
+								</div>
+								<div id="depreciation-container" class="wrappers">
+									<label>Adjustment (Includes Depreciation)</label>
+									<input type="text" class="form-control" placeholder="Sub-Total">
+									<input type="text" class="form-control" placeholder="TOTAL">
+								</div>
+							</div>
+
+						</div>
+						<!---------------- Property Asseessment --------------------------->
+						<h2 class="text-center">PROPERTY ASSESSMENT</h2>
+						<div class="panel-body" style="border:1px solid #337ab7; margin: 2rem">
+							<div id="property">
+								<div class="form-group col-md-3">
+									<label>Actual Use</label>
+									<select class="form-control">
+										<option value="" selected>Choose type</option>
+										<option value="residential">Residential</option>
+										<option value="residential">Commercial</option>
+										<option value="residential">Industrial</option>
+									</select>
+								</div>
+
+								<div class="form-group col-md-3">
+									<label>Market Value (PHP)</label>
+									<input type="number" class="form-control">
+								</div>
+
+								<div class="form-group col-md-3">
+									<label>Assessment Level (%)</label>
+									<input type="number" class="form-control">
+								</div>
+
+								<div class="form-group col-md-3">
+									<label>Assessed Value</label>
+									<input type="number" class="form-control">
+								</div>
+							</div>
+							<div class="form-group col-md-3">
+								<label>Previous Owner</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="form-group col-md-3">
+								<label>Previous Value</label>
+								<input type="number" class="form-control">
+							</div>	
+							<div class="form-group col-md-3">
+								<label>Taxability</label>
+								<select class="form-control">
+									<option value="taxable">Taxable</option>
+									<option value="excempt">Excempt</option>
+								</select>
+							</div>
+							<div class="form-group col-md-3">
+								<label>Effectivity</label>
+								<input type="date" class="form-control">
+							</div>
+						</div>
+						<div class="panel-body">
+				  			<div class="form-group col-md-6">
+								<h4>APPRAISED BY:</h4>
+								<div class="col-md-8">
+									<input type="text" placeholder="Name" class="form-control">
+								</div>
+								<div class="col-md-4">
+									<input type="date" class="form-control">
+								</div>
+							</div>  
+
+							<div class="form-group col-md-6">
+								<h4>ASSESSED BY:</h4>
+								<div class="col-md-8">
+									<input type="text" placeholder="Name" class="form-control">
+								</div>
+								<div class="col-md-4">
+									<input type="date" class="form-control">
+								</div>
+							</div>
+						</div>
+					<!-- submit form -->
+					<div class="container">
+						<button type="submit" class="btn btn-success btn-block btn-lg">Submit form</button> 
+					</div>
+			</div>
+			<!-- footer -->
+			<div class="panel-footer">
+				<!-- navigation -->
+				<button id="to-form-1" type="button" class="btn btn-primary btn-lg">Back</button>
+				<button id="to-form-2" type="button" class="btn btn-primary btn-lg">Next</button>
+				<footer class="text-right">&copy form 2021</footer>
+			</div>
+	</div>
+</form>
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/building.js"></script>
+</body>
+</html>
